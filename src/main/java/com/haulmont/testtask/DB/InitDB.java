@@ -57,7 +57,13 @@ public class InitDB {
             "INSERT INTO Doctors (first_name, last_name, patronymic, speciality)" +
             "   VALUES('Mariya','Koroleva','Evgenevna','pediatrician')" +
             "INSERT INTO Prescriptions (description, patient, doctor, creation_date, validity_period, priority)" +
-            "   VALUES('Get some rest', 2, 1, '2020-11-19', 3, 'Normal')";
+            "   VALUES('Get some rest', 2, 1, '2020-11-19', 3, 'Normal')" +
+            "INSERT INTO Prescriptions (description, patient, doctor, creation_date, validity_period, priority)" +
+            "   VALUES('Get pills', 3, 0, '2020-12-01', 10, 'Cito')" +
+            "INSERT INTO Prescriptions (description, patient, doctor, creation_date, validity_period, priority)" +
+            "   VALUES('Heart transplant', 4, 2, '2019-10-03', 1, 'Statim')" +
+            "INSERT INTO Prescriptions (description, patient, doctor, creation_date, validity_period, priority)" +
+            "   VALUES('Sleep more', 2, 0, '2018-10-03', 36, 'Normal')";
 
 
     DBConnection connection = new DBConnection();
